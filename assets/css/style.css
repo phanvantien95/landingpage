@@ -10,7 +10,7 @@ html {
 body {
   background: #fff;
   font: 400 12px/1.8 "Open Sans", sans-serif;
-  color: #666;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1115,6 +1115,11 @@ Hero Slider
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  position: relative; 
+}
+
+.absolute-title {
+  position: absolute; /* Make this element absolutely positioned */
 }
 
 /*
@@ -1244,7 +1249,6 @@ General Styles - Owlcarousel
   border-radius: 0;
   z-index: 1000;
   font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 11px;
   transition: background, padding 0.4s ease-in-out 0s;
@@ -1265,13 +1269,15 @@ General Styles - Owlcarousel
 .navbar-custom .navbar-brand {
   letter-spacing: 4px;
   font-weight: 400;
-  font-size: 22px;
-  color: #fff;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .navbar-custom .nav li > a {
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
+  filter: drop-shadow(0 1px 2px #000000);
+  font-weight: bold;
 }
 
 .navbar-custom .dropdown-menu > li > a {
@@ -1304,7 +1310,7 @@ General Styles - Owlcarousel
 .navbar-custom .dropdown-menu > li > a:focus,
 .navbar-custom .dropdown-menu > li > a:hover {
   background: none;
-  color: #fff;
+  color: #000000;
 }
 
 .navbar-custom .dropdown-menu > li > a:hover {
@@ -1397,7 +1403,7 @@ General Styles - Owlcarousel
 
 .titan-title-size-4 {
   letter-spacing: 24px;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 48px;
 }
 
