@@ -170,7 +170,6 @@ a,
 }
 
 .module p{
-  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
@@ -656,8 +655,6 @@ a,
 --------------------------------------------------------------*/
 .btn {
   border-radius: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
   padding: 8px 37px;
@@ -820,7 +817,6 @@ a,
 
 /* Forms common style */
 .form-control {
-  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -1143,7 +1139,6 @@ Photography Page Slider
   border: 0;
   border-radius: 0;
   z-index: 1000;
-  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 3px;
   font-size: 11px;
   transition: background, padding 0.4s ease-in-out 0s;
