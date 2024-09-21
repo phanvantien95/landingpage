@@ -9,7 +9,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 12px/1.8 "Montserrat", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
 }
@@ -895,17 +895,6 @@ blockquote {
   padding: 0;
 }
 
-.font-alt {
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.font-serif {
-  font-family: Volkhov, "Times New Roman", sans-serif;
-  font-style: italic;
-}
-
 .large-text {
   font-size: 24px !important;
 }
@@ -994,71 +983,6 @@ blockquote {
   letter-spacing: 8px;
 }
 
-/*--------------------------------------------------------------
-	Slider & Carousel
---------------------------------------------------------------*/
-/* -------------------------------------------------------------------
-General Styles - FlexSlider
-------------------------------------------------------------------- */
-.flex-direction-nav a,
-.flex-control-nav > li > a {
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.flex-direction-nav a {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  z-index: 10;
-  overflow: hidden;
-  opacity: 0;
-  margin: 0;
-}
-
-.flex-direction-nav .flex-prev {
-  opacity: 0;
-  left: 0;
-  cursor: url(../images/prev-light.png), e-resize;
-}
-
-.flex-direction-nav .flex-next {
-  opacity: 0;
-  right: 0;
-  cursor: url(../images/next-light.png), e-resize;
-}
-
-.flex-control-nav {
-  position: absolute;
-  width: auto;
-  left: 50%;
-  bottom: 20px;
-  z-index: 11;
-  text-align: center;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.flex-control-nav > li {
-  display: inline-block;
-  margin: 5px 3px;
-}
-
-.flex-control-nav > li > a {
-  background: transparent;
-  border: 1px solid #fff;
-  display: block;
-  height: 6px;
-  width: 6px;
-  border-radius: 6px;
-}
-
-.flex-control-nav > li > a:hover,
-.flex-control-nav > li > a.flex-active {
-  background: #fff;
-}
 
 /* -------------------------------------------------------------------
 Hero Slider
@@ -1148,40 +1072,6 @@ Photography Page Slider
   left: 80%;
   bottom: 20px;
   z-index: 11;
-}
-
-/* -------------------------------------------------------------------
-General Styles - Owlcarousel
-------------------------------------------------------------------- */
-.owl-controls {
-  margin-top: 40px;
-}
-
-.owl-pagination div {
-  display: inline-block;
-}
-
-.owl-controls .owl-page span {
-  background: transparent;
-  border: 1px solid #111;
-  display: block;
-  height: 6px;
-  width: 6px;
-  margin: 0 3px 5px;
-  border-radius: 6px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.owl-controls .owl-page.active span,
-.owl-controls.clickable .owl-page:hover span {
-  background: #111;
-}
-
-.owl-controls .owl-buttons > div {
-  display: inline-block;
-  margin: 5px;
-  font-size: 14px;
-  color: #111;
 }
 
 /*--------------------------------------------------------------
@@ -1345,37 +1235,6 @@ General Styles - Owlcarousel
   font-size: 11px;
 }
 
-/* Navbar search
-
-.dropdown-search {
-	position: relative;
-	padding: 5px;
-}
-
-.dropdown-search .form-control {
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 11px;
-}
-
-.search-btn {
-	position: absolute;
-	background: transparent;
-	border: none;
-	overflow: hidden;
-	top: 50%;
-	right: 1px;
-	width: 42px;
-	height: 40px;
-	line-height: 38px;
-	font-size: 14px;
-	outline: none;
-	color: #999;
-	margin-top: -20px;
-}*/
 /*--------------------------------------------------------------
 	Header
 --------------------------------------------------------------*/
@@ -1425,16 +1284,6 @@ General Styles - Owlcarousel
 /* Service Page Header */
 .service-page-header:before {
   background: rgba(2, 2, 2, 0.1);
-}
-
-/* Pricing Page Header */
-.pricing-page-header {
-  background-position: 40% 14%;
-  background-repeat: no-repeat;
-}
-
-.pricing-page-header:before {
-  background: rgba(2, 2, 2, 0.6);
 }
 
 /* Gallery Page Header */
