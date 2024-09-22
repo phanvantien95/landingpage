@@ -1,8 +1,7 @@
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
-@import url("../fonts/webfonts/Montserrat.css");
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Romanesco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mr+Dafoe&family=Romanesco&display=swap');
 html {
   overflow-y: scroll;
   overflow-x: hidden;
