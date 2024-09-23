@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
+/* @font-face {
+  font-family: "Montserrat";
+  src: url('/assets/lib/font/montserrat-regular-webfont.woff2') format('woff2'),
+       url('/assets/lib/font/montserrat-regular-webfont.woff') format('woff');
+} */
 html {
   overflow-y: scroll;
   overflow-x: hidden;
