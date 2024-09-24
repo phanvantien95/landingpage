@@ -266,8 +266,6 @@ a,
 
 .side-image-text {
   background: #fafafa;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
   padding: 40px 60px 40px 20px;
 }
 
@@ -1179,7 +1177,8 @@ Photography Page Slider
 	Navbar
 --------------------------------------------------------------*/
 .navbar-custom {
-  background-color: rgba(18, 40, 62,0.95);
+  background-color: rgba(18, 40, 62,0.90);
+  /* background-image: linear-gradient(to right, rgba(65, 50, 50, 0.9), rgba(235, 118, 0, 0.9), rgba(0, 183, 255, 0.9)); */
   border: 0;
   border-radius: 0;
   z-index: 1000;
@@ -1328,12 +1327,139 @@ Photography Page Slider
 .shop-page-header:before {
   background: rgba(34, 34, 34, 0.3);
 }
+/*--------------------------------------------------------------
+	Portfolio
+--------------------------------------------------------------*/
+/* Portfolio filter */
+.filter {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 70px;
+  font-weight: 800;
+  color: #12283E;
+  font-size: 16px;
+}
+
+.filter > li {
+  display: inline-block;
+  padding: 0 0 10px;
+  margin: 0 25px;
+}
+
+/* Portfolio grid */
+.works-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.works-grid.works-grid-gut {
+  margin: 0 0 0 -10px;
+}
+
+.works-grid.works-grid-gut .work-item {
+  padding: 0 0 10px 10px;
+}
+
+.work-item {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+.works-grid-3 .work-item {
+  width: 33.3333%;
+}
+
+.container .works-grid-3 .work-item {
+  width: 33.2%;
+}
+
+.works-grid-4 .work-item {
+  width: 25%;
+}
+
+.works-grid-5 .work-item {
+  width: 20%;
+}
+
+.work-item > a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.work-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-image img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.work-image:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.work-caption {
+  width: 100%;
+  padding: 0 20px;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.work-title {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.work-descr {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ece916;
+}
+
+.work-item:hover .work-image:after {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.work-item:hover .work-image > img {
+  -webkit-transform: scale(1.1) rotate(2deg);
+  -ms-transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1) rotate(2deg);
+}
+
+.work-item:hover .work-caption {
+  bottom: 50%;
+  opacity: 1;
+  z-index: 3;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
 
 /*--------------------------------------------------------------
 	Footer
 --------------------------------------------------------------*/
 .footer {
   padding: 10px 0;
+  background: #12283E;
+  color: #e4e4e4;
 }
 
 .footer .copyright {
@@ -1341,7 +1467,7 @@ Photography Page Slider
 }
 
 .footer .footer-social-links {
-  text-align: right;
+  text-align: left;
 }
 
 .footer .footer-social-links a {
@@ -1597,3 +1723,5 @@ Photography Page Slider
   }
 
 }}
+
+
