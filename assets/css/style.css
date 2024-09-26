@@ -1596,6 +1596,9 @@ Photography Page Slider
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
 @media (min-width: 768px) {
+  /* Image size */
+  
+
   .navbar-transparent {
     background: transparent;
     padding-bottom: 15px;
@@ -1684,11 +1687,14 @@ Photography Page Slider
   /* Half-image */
   .side-image {
     position: relative;
-    height: 300px;
+    height: 100%;
   }
 }
 
 @media (max-width: 767px) {
+  .side-image {
+    height: 350px;
+  }
 
   /* Navbar */
   .navbar-custom .navbar-nav {
@@ -1860,4 +1866,24 @@ Photography Page Slider
 .icon-box p{
   font-size: 16px;
   color: wheat;
+}
+
+@media (max-width: 767px) {
+  .target{
+    padding: 15px 10px;
+  }
+
+  .work-item {
+    width: 100% !important;
+    float:none;
+    margin: auto;
+  }
+
+  .title_lienhe{
+    font-size: 14px;
+  }
+
+  .side-image{
+    border-radius: 10%;
+  }
 }
