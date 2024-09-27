@@ -31,12 +31,16 @@
     url("./webfonts/Montserrat-Bold.woff") format("woff");
 }
 
-
+html, body {
+  overflow-x: hidden; /* Ẩn hoàn toàn cuộn ngang */
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Đặt chiều rộng trang web theo viewport width */
+}
 
 html {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -ms-overflow-style: scrollbar;
+  overflow-y: auto; /* Sử dụng auto để hiển thị thanh cuộn dọc khi cần */
+  -ms-overflow-style: scrollbar; /* Kiểm soát kiểu thanh cuộn trên trình duyệt cũ */
 }
 
 body {
@@ -44,7 +48,9 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
+  position: relative; /* Đảm bảo bố cục bên trong không bị ảnh hưởng */
 }
+
 
 img {
   max-width: 100%;
