@@ -31,31 +31,18 @@
     url("./webfonts/Montserrat-Bold.woff") format("woff");
 }
 
-html, body {
-  overflow-x: hidden; /* Không cho phép cuộn ngang */
-  margin: 0;
-  padding: 0;
-  width: 100vw; /* Đặt chiều rộng trang theo chiều rộng của viewport */
-  box-sizing: border-box;
-}
-
-/* Tất cả phần tử con sẽ kế thừa từ body */
-*, *::before, *::after {
-  box-sizing: inherit; /* Kế thừa box-sizing từ thẻ cha */
-}
-
-
 html {
-  overflow-y: auto; /* Sử dụng auto để hiển thị thanh cuộn dọc khi cần */
-  -ms-overflow-style: scrollbar; /* Kiểm soát kiểu thanh cuộn trên trình duyệt cũ */
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+  box-sizing: border-box;
 }
 
 body {
   background: #fff;
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
+  font: 400 14px/1.8 "Montserrat", sans-serif;
+  color: #666;
   -webkit-font-smoothing: antialiased;
-  position: relative; /* Đảm bảo bố cục bên trong không bị ảnh hưởng */
 }
 
 
@@ -1177,6 +1164,40 @@ Photography Page Slider
   z-index: 11;
 }
 
+/* -------------------------------------------------------------------
+General Styles - Owlcarousel
+------------------------------------------------------------------- */
+.owl-controls {
+  margin-top: 40px;
+}
+
+.owl-pagination div {
+  display: inline-block;
+}
+
+.owl-controls .owl-page span {
+  background: transparent;
+  border: 1px solid #111;
+  display: block;
+  height: 6px;
+  width: 6px;
+  margin: 0 3px 5px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.owl-controls .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+  background: #111;
+}
+
+.owl-controls .owl-buttons > div {
+  display: inline-block;
+  margin: 5px;
+  font-size: 14px;
+  color: #111;
+}
+
 /*--------------------------------------------------------------
 	Preloader
 --------------------------------------------------------------*/
@@ -1604,7 +1625,6 @@ Photography Page Slider
 
 
 
-
 /*--------------------------------------------------------------
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
@@ -1859,13 +1879,15 @@ Photography Page Slider
   }
 }
 
+/* Google map */
+
 
 /* Contact Info */
 /*========================================
            Contact
 ========================================*/
 #contact {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   text-align: center;
 }
 
@@ -1879,7 +1901,7 @@ Photography Page Slider
 #contact .contact-info {
   z-index: 1;
   background: rgba(18, 40, 62,0.95);
-  padding: 15px 0 30px 0 ;
+  padding: 60px 0 30px 0 ;
   color: #fff;
 }
 
@@ -1899,6 +1921,88 @@ Photography Page Slider
 .icon-box p{
   font-size: 16px;
   color: wheat;
+}
+
+/* Khach hang */
+/* Container chính cho carousel khách hàng */
+.customer-container {
+  overflow: hidden;
+}
+
+.title-khachhang{
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  padding: 30px;
+}
+
+.customer-slider-container {
+  width: 100%;
+  padding: 0 0 60px 0;
+}
+
+/* Slider chứa các logo */
+.customer-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.customer-logos-wrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Dải logo */
+.customer-logos {
+  display: flex;
+  align-items: center;
+}
+
+/* Định dạng cho từng logo item */
+.logo-item {
+  width: 150px; /* Kích thước chiều rộng của mỗi logo item */
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Căn dọc logo và phụ đề */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center;     /* Căn giữa theo chiều ngang */
+  margin: 0 20px;          /* Khoảng cách giữa các logo */
+  transition: transform 0.5s ease, opacity 0.8s ease;
+  opacity: 0.9;            /* Hiển thị logo mờ nhẹ */
+}
+
+/* Định dạng logo */
+.logo-item img {
+  width: 100%; /* Đặt kích thước cố định cho logo */
+  height: auto;
+  display: block;
+}
+
+
+/* Định dạng hover */
+.logo-item:hover {
+  transform: scale(1.1); /* Phóng to logo khi hover */
+  opacity: 1; /* Hiển thị logo rõ ràng hơn khi hover */
+}
+
+/* Animation chuyển động liên tục */
+.customer-logos-wrapper {
+  animation: scroll 15s linear infinite; /* Hiệu ứng cuộn liên tục */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Vị trí ban đầu */
+  }
+  100% {
+    transform: translateX(-50%); /* Dịch chuyển 50% chiều rộng để lặp lại */
+  }
+}
+/* Google map */
+.google-map {
+  box-shadow: 0px 0px 5px 5px rgb(61, 116, 138);
+  margin-bottom: -60px;
 }
 
 /* Zalo */
