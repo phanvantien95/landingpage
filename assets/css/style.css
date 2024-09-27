@@ -1887,3 +1887,84 @@ Photography Page Slider
   font-size: 16px;
   color: wheat;
 }
+
+/* Zalo */
+/* Định dạng nút cho màn hình desktop */
+.zalo-button {
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  z-index: 1000;
+  cursor: pointer; /* Thêm con trỏ hình bàn tay */
+}
+
+.zalo-button img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(4, 56, 77, 0.3); /* Hiệu ứng phát quang mặc định */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounce 2s infinite, glow 2s infinite; /* Hiệu ứng nảy và phát quang */
+}
+
+/* Hiệu ứng phát quang */
+@keyframes glow {
+  0% {
+      box-shadow: 0px 0px 10px 5px rgba(0, 183, 255, 0.2);
+  }
+  50% {
+      box-shadow: 0px 0px 15px 10px rgba(0, 183, 255, 0.6); /* Tăng cường phát quang */
+  }
+  100% {
+      box-shadow: 0px 0px 10px 5px rgba(0, 183, 255, 0.2);
+  }
+}
+
+/* Hiệu ứng nảy */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px); /* Nút nhảy lên */
+  }
+  60% {
+      transform: translateY(-5px); /* Nút nhảy nhẹ hơn */
+  }
+}
+
+
+/* Hiệu ứng khi hover */
+.zalo-button img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 30px 15px rgba(0, 183, 255, 1); /* Tăng cường phát quang khi hover */
+}
+
+/* Hiệu ứng khi nhấp vào nút */
+.zalo-button:active img {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+
+/* Hiệu ứng khi nhấp vào nút */
+.zalo-button:active img {
+  transform: scale(0.9); /* Thu nhỏ nhẹ khi click */
+  transition: transform 0.1s ease; /* Thời gian phản hồi nhanh hơn */
+}
+
+
+/* Định dạng cho màn hình nhỏ hơn (điện thoại) */
+@media only screen and (max-width: 768px) {
+  .zalo-button img {
+      width: 25px;
+      height: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .zalo-button img {
+      width: 20px;
+      height: 20px;
+  }
+}
