@@ -32,11 +32,18 @@
 }
 
 html, body {
-  overflow-x: hidden; /* Ẩn hoàn toàn cuộn ngang */
+  overflow-x: hidden; /* Không cho phép cuộn ngang */
   margin: 0;
   padding: 0;
-  width: 100vw; /* Đặt chiều rộng trang web theo viewport width */
+  width: 100vw; /* Đặt chiều rộng trang theo chiều rộng của viewport */
+  box-sizing: border-box;
 }
+
+/* Tất cả phần tử con sẽ kế thừa từ body */
+*, *::before, *::after {
+  box-sizing: inherit; /* Kế thừa box-sizing từ thẻ cha */
+}
+
 
 html {
   overflow-y: auto; /* Sử dụng auto để hiển thị thanh cuộn dọc khi cần */
@@ -1963,14 +1970,14 @@ Photography Page Slider
 /* Kích thước tối ưu cho màn hình nhỏ hơn như iPhone */
 @media only screen and (max-width: 768px) {
   .zalo-button img {
-      width: 30px; /* Tăng kích thước cho điện thoại */
-      height: 30px;
+      width: 35px; /* Tăng kích thước cho điện thoại */
+      height: 35px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .zalo-button img {
-      width: 35px; /* Tăng kích thước lớn hơn cho màn hình nhỏ hơn */
-      height: 35px;
+      width: 40px; /* Tăng kích thước lớn hơn cho màn hình nhỏ hơn */
+      height: 40px;
   }
 }
