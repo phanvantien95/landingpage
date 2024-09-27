@@ -1957,14 +1957,14 @@ Photography Page Slider
 /* Kích thước tối ưu cho màn hình nhỏ hơn như iPhone */
 @media only screen and (max-width: 768px) {
   .zalo-button img {
-      width: 50px; /* Tăng kích thước cho điện thoại */
-      height: 50px;
+      width: 40px; /* Tăng kích thước cho điện thoại */
+      height: 40px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .zalo-button img {
-      width: 70px; /* Tăng kích thước lớn hơn cho màn hình nhỏ hơn */
-      height: 70px;
+      width: 50px; /* Tăng kích thước lớn hơn cho màn hình nhỏ hơn */
+      height: 50px;
   }
 }
