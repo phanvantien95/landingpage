@@ -1954,17 +1954,17 @@ Photography Page Slider
 }
 
 
-/* Định dạng cho màn hình nhỏ hơn (điện thoại) */
+/* Kích thước tối ưu cho màn hình nhỏ hơn như iPhone */
 @media only screen and (max-width: 768px) {
   .zalo-button img {
-      width: 40px;
-      height: 40px;
+      width: 80px; /* Tăng kích thước cho điện thoại */
+      height: 80px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .zalo-button img {
-      width: 35px;
-      height: 35px;
+      width: 90px; /* Tăng kích thước lớn hơn cho màn hình nhỏ hơn */
+      height: 90px;
   }
 }
