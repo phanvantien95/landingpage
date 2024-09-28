@@ -2016,7 +2016,8 @@ General Styles - Owlcarousel
 
 /* Animation chuyển động liên tục */
 .customer-logos-wrapper {
-  animation: scroll 25s linear infinite; /* Hiệu ứng cuộn liên tục */
+  width: 180%;
+  animation: scroll 30s linear infinite; /* Hiệu ứng cuộn liên tục */
   will-change: transform;
 }
 
