@@ -271,7 +271,7 @@ a,
 
 .side-image-text {
   background: #fafafa;
-  padding: 40px 60px 40px 60px;
+  padding: 40px 20px 40px 20px;
 }
 
 .side-image-text p {
@@ -1907,7 +1907,7 @@ General Styles - Owlcarousel
 #contact .contact-info {
   z-index: 1;
   background: rgba(18, 40, 62,0.95);
-  padding: 60px 0 30px 0 ;
+  padding: 30px 0 30px 0 ;
   color: #fff;
 }
 
@@ -2020,7 +2020,7 @@ General Styles - Owlcarousel
 /* Animation chuyển động liên tục */
 .customer-logos-wrapper {
   width: 180%;
-  animation: scroll 30s linear infinite; /* Hiệu ứng cuộn liên tục */
+  animation: scroll 45s linear infinite; /* Hiệu ứng cuộn liên tục */
   will-change: transform;
 }
 
@@ -2036,7 +2036,7 @@ General Styles - Owlcarousel
 /* Google map */
 .google-map {
   box-shadow: 0px 0px 5px 5px rgb(61, 116, 138);
-  margin-bottom: -60px;
+  /* margin-bottom: 15px; */
 }
 
 /* Zalo */
