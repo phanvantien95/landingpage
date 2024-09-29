@@ -2141,6 +2141,7 @@ General Styles - Owlcarousel
 @media (max-width: 768px) {
   .project-item {
     margin-bottom: 15px;
+    width: 50%;
   }
 
   .project-item img {
