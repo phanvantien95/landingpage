@@ -2,6 +2,15 @@
 <html lang="vi" dir="ltr">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFEJHC10NE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JFEJHC10NE');
+  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -36,13 +45,13 @@
   <meta property="og:title" content="Thi công phòng chì an toàn bức xạ - Công ty Tiến Phát">
   <meta property="og:description"
     content="Tiến Phát - Chuyên cung cấp, lắp đặt thi công phòng chì an toàn bức xạ cho máy X-quang, CT Scan, X Quang nha, DSA. Máy X Quang Kỹ thuật số DR, CR. Liên hệ ngay để nhận tư vấn miễn phí.">
-  <!-- <meta property="og:url" content=""> -->
+  <meta property="og:url" content="https://tienphatphongchi.com">
   <meta property="og:type" content="website">
-  <!-- <meta property="og:image" content="">
+  <meta property="og:image" content="https://tienphatphongchi.com/assets/images/thumnail.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:alt" content="Hình ảnh minh họa cho dịch vụ thi công phòng chì"> -->
+  <meta property="og:image:alt" content="Hình ảnh minh họa cho dịch vụ thi công phòng chì">
   <meta property="og:locale" content="vi_VN">
   <!--  
     Stylesheets
@@ -86,10 +95,10 @@
         </div>
         <div class="collapse navbar-collapse" id="custom-collapse" style="margin: 0 auto; font-size: 15px;">
           <ul class="nav navbar-nav">
-            <li class="dropdown"><a href="#">GIỚI THIỆU</a></li>
-            <li class="dropdown"><a href="#">SẢN PHẨM/ DỊCH VỤ</a></li>
-            <li class="dropdown"><a href="#">CÔNG TRÌNH</a></li>
-            <li class="dropdown"><a href="#">LIÊN HỆ</a></li>
+            <li class="dropdown"><a href="#about">GIỚI THIỆU</a></li>
+            <li class="dropdown"><a href="#works">SẢN PHẨM/ DỊCH VỤ</a></li>
+            <li class="dropdown"><a href="projects">CÔNG TRÌNH</a></li>
+            <li class="dropdown"><a href="#contact">LIÊN HỆ</a></li>
           </ul>
         </div>
       </div>
@@ -179,19 +188,12 @@
         </div>
       </section>
       <!-- About us -->
-      <section class="module pt-0 pb-0" id="about"></section>
+      <section class="module pt-0 pb-0" id="about">
+      <title class="module-subtitle font-serif" style="font-weight: bold;">CÔNG TY TNHH TM KT & CN TIẾN PHÁT - Thi
+        công phòng chì an toàn bức xạ</title>
       <div class="row position-relative m-0">
-        <div class="col-xs-12 col-md-6 side-image"
-          style="background-image: url('assets/images/agency/chi_la.jpg'); background-color: #fafafa;display: flex; justify-content: center; align-items: center">
-          <!-- <img src="assets/images/agency/about.webp" alt="about-us"
-            style="width: 100%; height: auto; display: block; margin: auto;"> -->
-        </div>
-
-
+        <div class="col-xs-12 col-md-6 side-image" data-background="assets/images/agency/proof.png"></div>
         <div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
-          <title class="module-subtitle font-serif" style="font-weight: bold;">CÔNG TY TNHH TM KT & CN TIẾN PHÁT - Thi
-            công phòng chì an toàn bức xạ</title>
-
           <div class="row">
             <div class="col-sm-12">
               <div class="module-title" style="font-weight: 600;">VỀ CHÚNG TÔI</div>
@@ -520,7 +522,7 @@
                   d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c.2 35.5-28.5 64.3-64 64.3l-320.4 0c-35.3 0-64-28.7-64-64l0-160.4-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24zM352 224a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm-96 96c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16l192 0c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80l-64 0z" />
               </svg>
 
-              <h4>Address</h4>
+              <h4>Địa chỉ</h4>
 
               <p>12A, Đường số 109, Phường Phước Long B, TP.Thủ Đức, TP.Hồ Chí Minh</p>
 
@@ -555,7 +557,7 @@
                   d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
               </svg>
 
-              <h4>Email us on</h4>
+              <h4>Email</h4>
 
               <p> <a href="mailto:tienphattechnologies@gmail.com"
                   style="color: wheat;">tienphattechnologies@gmail.com</a></p>
