@@ -68,11 +68,6 @@ iframe {
   letter-spacing: 0.08em;
 }
 
-.leftauto {
-  right: 0 !important;
-  left: auto !important;
-}
-
 /* Transition elsements */
 a,
 .btn {
@@ -82,8 +77,7 @@ a,
 
 .work-caption,
 .work-image>img,
-.work-image:after,
-.post-images-slider {
+.work-image:after {
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -393,38 +387,6 @@ ul {
 /* -------------------------------------------------------------------
 Hero Slider
 ------------------------------------------------------------------- */
-.hero-slider {
-  margin: 0 !important;
-}
-
-.hero-slider .slides>li {
-  display: none;
-}
-
-.hero-slider {
-  height: 100% !important;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.hero-slider .slides {
-  height: 100% !important;
-  transition-delay: 1s;
-}
-
-.hero-slider .slides li {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100% !important;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
 
 /* Caption */
 .titan-caption {
@@ -578,13 +540,6 @@ General Styles - Owlcarousel
   right: auto;
   top: 0;
   margin-top: 0;
-}
-
-.navbar-custom .dropdown-menu.left-side .dropdown-menu {
-  border: 0;
-  border-right: 1px solid rgba(73, 71, 71, 0.15);
-  right: 100%;
-  left: auto;
 }
 
 .navbar-custom .nav>li>a:focus,
